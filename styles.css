@@ -1,0 +1,758 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 320px) {
+  body #home h1 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 770px) and (max-width: 1024px) {
+  #about {
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 50% 50%;
+    height: 150vh;
+    align-items: center;
+    justify-items: center;
+  }
+  #about div {
+    width: 70%;
+    height: 90%;
+  }
+  #about div div {
+    width: 30%;
+    height: 20%;
+  }
+  #blog {
+    height: 150vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 53% 40%;
+  }
+  #blog div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  #blog div div {
+    margin: 0;
+    width: 90%;
+  }
+  #blog div div h4 {
+    margin-top: 2rem;
+    padding: 0;
+  }
+  #blog div div ul {
+    width: 90%;
+    margin-top: 2rem;
+    padding: 0;
+  }
+  #blog iframe {
+    width: 95%;
+    height: 107%;
+  }
+  #blog .sec5-one {
+    margin: 0;
+    width: 90%;
+    margin-left: 1.5rem;
+    height: 100%;
+  }
+}
+@media (min-width: 510px) and (max-width: 769px) {
+  body {
+    box-sizing: border-box;
+  }
+  body .header {
+    background-color: white;
+    color: gray;
+    height: 15%;
+  }
+  body .header .nav {
+    width: 50%;
+  }
+  body .header .a {
+    color: black;
+    font-size: 0.9rem;
+  }
+  body #about {
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 50% 50%;
+    height: 150vh;
+    align-items: center;
+    justify-items: center;
+  }
+  body #about div {
+    width: 90%;
+    height: 90%;
+  }
+  body #about div div {
+    width: 30%;
+    height: 20%;
+  }
+  body #portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+  }
+  body #portfolio div {
+    width: 100%;
+    height: 37%;
+  }
+  body #portfolio div div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  body #portfolio div div h2 {
+    margin-bottom: -1rem;
+    font-size: 1.5rem;
+  }
+  body #portfolio div div p {
+    font-size: 0.9rem;
+  }
+  body #portfolio div div nav {
+    margin-top: 2rem;
+  }
+  body #portfolio .sec3-two {
+    width: 100%;
+    height: 60%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-left: 1.5rem;
+  }
+  body #portfolio .sec3-two div {
+    height: 90%;
+  }
+  body #blog {
+    height: 150vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 53% 40%;
+  }
+  body #blog div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  body #blog div div {
+    margin: 0;
+    width: 90%;
+  }
+  body #blog div div h4 {
+    margin-top: 2rem;
+    padding: 0;
+  }
+  body #blog div div ul {
+    width: 90%;
+    margin-top: 2rem;
+    padding: 0;
+  }
+  body #blog iframe {
+    width: 95%;
+    height: 108%;
+  }
+  body #blog .sec5-one {
+    margin: 0;
+    width: 90%;
+    margin-left: 1.5rem;
+    height: 100%;
+  }
+  body #contact {
+    height: 60vh;
+  }
+  body #contact div {
+    margin: 0;
+    width: 80%;
+  }
+  body #contact div h4 {
+    margin-bottom: -1rem;
+  }
+  body #contact div p {
+    font-size: 0.9rem;
+  }
+  body #contact div button {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  body .footer {
+    height: 90vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+  }
+  body .footer h4 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  body .footer div {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  body .footer .location {
+    height: 80%;
+  }
+  body .footer .location hr {
+    width: 100%;
+  }
+  body .footer .more {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: white;
+    color: black;
+    opacity: 1;
+  }
+  .header label i {
+    color: black;
+  }
+  .header nav {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+  }
+  .header nav a {
+    color: black;
+    font-weight: bold;
+  }
+  .header nav li {
+    margin: 1rem;
+  }
+  #navs:checked + nav {
+    display: block;
+  }
+  #home h1 {
+    font-size: 1.5rem;
+  }
+  #home p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  #about {
+    grid-template-columns: 95%;
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 270vh;
+    justify-items: center;
+    align-items: center;
+  }
+  #about div {
+    width: 90%;
+    height: 75%;
+  }
+  #about div div {
+    width: 30%;
+  }
+  #portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 350vh;
+  }
+  #portfolio div {
+    width: 100%;
+    height: 22%;
+  }
+  #portfolio div div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  #portfolio div div h2 {
+    margin-bottom: -1rem;
+    font-size: 1.5rem;
+  }
+  #portfolio div div p {
+    font-size: 0.9rem;
+  }
+  #portfolio div div nav {
+    margin-top: 0;
+  }
+  #portfolio .sec3-two {
+    width: 100%;
+    margin-top: 20%;
+    height: 69%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-left: 1.5rem;
+  }
+  #portfolio .sec3-two div {
+    height: 90%;
+  }
+  .carousel-item .sec-four div {
+    width: 90%;
+    height: 40%;
+  }
+  #blog {
+    height: 150vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 40%;
+  }
+  #blog div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  #blog div div {
+    margin: 0;
+    width: 90%;
+  }
+  #blog div div h4 {
+    margin-top: 2rem;
+    margin: 0;
+  }
+  #blog div div ul {
+    width: 100%;
+    margin: 0;
+  }
+  #blog iframe {
+    width: 95%;
+    height: 80%;
+    margin-top: 4rem;
+  }
+  #blog .sec5-one {
+    margin: 0;
+    width: 90%;
+    margin-left: 1.5rem;
+    height: 100%;
+    margin-top: 3rem;
+  }
+  #contact {
+    height: 60vh;
+  }
+  #contact div {
+    margin: 0;
+    width: 80%;
+  }
+  #contact div h4 {
+    margin-bottom: -1rem;
+  }
+  #contact div button {
+    margin: 0;
+  }
+  .footer {
+    height: 90vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+  }
+  .footer h4 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .footer div {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .footer .location {
+    height: 80%;
+  }
+  .footer .location hr {
+    width: 100%;
+  }
+  .footer .more {
+    margin-top: 6rem;
+  }
+}
+@media (min-width: 501px) {
+  .navs {
+    display: none;
+  }
+}
+body {
+  box-sizing: border-box;
+}
+body section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/banner_bg.jpg);
+  display: grid;
+  background-size: cover;
+}
+body section header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  position: fixed;
+}
+body section header h3 {
+  font-weight: bolder;
+}
+body section header b {
+  font-size: 2.4rem;
+  color: orange;
+}
+body section header nav {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+body section header nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+}
+body section div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  gap: 1.2rem;
+}
+body section div h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+body section div h1 b {
+  color: orange;
+}
+body section div h1 span {
+  color: #33c1cf;
+}
+body section div p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+body section div button {
+  width: 9rem;
+  height: 2.8rem;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+body section div button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+body .sec-two {
+  background-image: url(images/about-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  align-items: center;
+  justify-content: center;
+}
+body .sec-two div {
+  margin-top: 0;
+  width: 95%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+body .sec-two div p {
+  font-size: 0.9rem;
+}
+body .sec-two div div {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 7rem;
+  height: 7rem;
+  background-color: rgb(240, 190, 98);
+}
+body .sec-two div div img {
+  width: 3rem;
+}
+body .sec-two div hr {
+  width: 90%;
+}
+body .sec-two div button {
+  width: 13rem;
+  height: 2.8rem;
+  border: none;
+  background-color: #33c1cf;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+}
+body .sec-three {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+}
+body .sec-three div {
+  background-color: #33c1cf;
+  width: 40%;
+  height: 100%;
+  margin-top: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .sec-three div div {
+  width: 60%;
+  display: flex;
+  align-items: start;
+  height: 50%;
+}
+body .sec-three div hr {
+  width: 80%;
+}
+body .sec-three div nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 5%;
+}
+body .sec-three div nav a {
+  text-decoration: none;
+  color: white;
+}
+body .sec-three div nav a:hover {
+  color: orange;
+}
+body .sec-three .sec3-two {
+  background-color: white;
+  width: 60%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 33.3% 33.3% 33%;
+  gap: 0;
+  align-content: center;
+  justify-content: start;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+body .sec-three .sec3-two div {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+body .sec-three .sec3-two img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+body .sec-four {
+  width: 100%;
+  height: 60vh;
+  background: none;
+  background-color: #f7c552;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .sec-four div {
+  width: 50%;
+  height: 30%;
+  border-radius: 0.6rem;
+  font-family: cursive;
+  margin-top: 0;
+  background-color: white;
+  color: grey;
+  text-align: center;
+}
+body .sec-four .sec4-two {
+  width: 50%;
+  background-color: #f7c552;
+  font-family: sans-serif;
+  gap: 0.3rem;
+}
+body .sec-four .sec4-two i {
+  font-size: 2rem;
+  color: white;
+}
+body .sec-five {
+  background-image: url(images/blog-bg.jpg);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-attachment: fixed;
+}
+body .sec-five div {
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body .sec-five div div {
+  width: 62%;
+  height: 100%;
+  margin-left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+}
+body .sec-five div div h1 {
+  font-size: 2rem;
+}
+body .sec-five div div p {
+  font-size: 0.9rem;
+}
+body .sec-five div div ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+body .sec-five div div ul a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+body .sec-five div div ul a:active {
+  color: orange;
+}
+body .sec-five div hr {
+  width: 80%;
+}
+body .sec-five iframe {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  color: black;
+  text-align: start;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+body .sec-five iframe .sec5-one {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  color: black;
+  text-align: start;
+  margin-left: 3%;
+  opacity: 1;
+}
+body .sec-five iframe .sec5-one h4 {
+  margin: 0;
+  padding: 0;
+}
+body .sec-five iframe .sec5-one div {
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  color: black;
+  margin-left: 0;
+}
+body .sec-five iframe .sec5-one img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .sec-five iframe .sec5-one .small {
+  color: #33c1cf;
+}
+body .sec-five iframe .sec5-one p {
+  color: gray;
+  font-size: 0.8rem;
+}
+body .sec-six {
+  width: 100%;
+  height: 45vh;
+  background: none;
+  background-color: #596065;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .sec-six div {
+  width: 28%;
+  margin-top: 0;
+  text-align: center;
+}
+body .sec-six div hr {
+  width: 100%;
+}
+body .sec-six div p {
+  font-size: 0.8rem;
+}
+body .sec-six div button {
+  width: 12rem;
+  background-color: #33c1cf;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  margin-top: 5%;
+}
+body .map {
+  width: 100%;
+  height: 60vh;
+  background: none;
+}
+body .map iframe {
+  width: 100%;
+  height: 100%;
+}
+body footer {
+  background-color: #373a3c;
+  width: 100%;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+  justify-content: space-evenly;
+  align-content: center;
+  color: white;
+}
+body footer div h2 {
+  margin-bottom: 1rem;
+}
+body footer div h2 b {
+  font-size: 2rem;
+  color: orange;
+}
+body footer div h4 {
+  margin-bottom: 2rem;
+}
+body footer div hr {
+  width: 50%;
+}
+body footer div p {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+body footer div p i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=styles.css.map */
